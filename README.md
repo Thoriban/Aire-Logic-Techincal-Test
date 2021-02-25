@@ -34,6 +34,7 @@ The programme will then print out the average word count for the artist (and in 
 
 Finally the programme will give you the option of restarting the application or exiting.
 
+
 ## Roadmap
 To further develop this program, I would add a dataset for the artist information gained from the MusicBrainz API
 and request more information using mutliple queries to allow for the collection of album data in order to compare 
@@ -42,3 +43,15 @@ release schedules between artists at varying points throughout their career's.
 Additionally, I would replace the command line side of the application with a web interface that would display the
 search software and allow for the visualisation of the artist's data in the form of charts relating to the average 
 word count of songs for a given time frame, comparing an artist's works across certain periods of their career.
+
+
+## Tasks Required
+Take an artist's name and produce the average number of words in their songs - Completed
+
+
+## Stretch Goals
+1. Compare two or more artists - Added the ability to input two artists and compare the average word counts of their songs
+2. Speed up the app - Added asynchronous tasks to speed up the process of API calls to the Lyrics.ovh database.
+3. Show more statistical data - Not Completed
+4. Visualisations - Not Completed
+

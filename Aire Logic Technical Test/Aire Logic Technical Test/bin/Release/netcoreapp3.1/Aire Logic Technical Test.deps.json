@@ -1,0 +1,94 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Aire Logic Technical Test/1.0.0": {
+        "dependencies": {
+          "MetaBrainz.MusicBrainz": "3.0.2",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "Aire Logic Technical Test.dll": {}
+        }
+      },
+      "MetaBrainz.Common.Json/3.0.0": {
+        "dependencies": {
+          "System.Text.Json": "4.7.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/MetaBrainz.Common.Json.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "MetaBrainz.MusicBrainz/3.0.2": {
+        "dependencies": {
+          "MetaBrainz.Common.Json": "3.0.0",
+          "System.Text.Json": "4.7.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/MetaBrainz.MusicBrainz.dll": {
+            "assemblyVersion": "3.0.2.0",
+            "fileVersion": "3.0.2.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "System.Text.Json/4.7.1": {
+        "runtime": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {
+            "assemblyVersion": "4.0.1.1",
+            "fileVersion": "4.700.20.6702"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Aire Logic Technical Test/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MetaBrainz.Common.Json/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-13OphYlQsLgRbz0zp3w/07QZ0X7S/PWrLggjVPyWl019FtDhSyD7kuKS5XRXEbtik6CnWA0aEHGWXNzFy2gM9Q==",
+      "path": "metabrainz.common.json/3.0.0",
+      "hashPath": "metabrainz.common.json.3.0.0.nupkg.sha512"
+    },
+    "MetaBrainz.MusicBrainz/3.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MamqQI4BWW1b/xsTMZ9tbsD7eBq2nu2wjYx3YQUERT3qVOwf7Qk9yJGfovfEUSF8A5L2iKg6i2JFQYJuM3KKTw==",
+      "path": "metabrainz.musicbrainz/3.0.2",
+      "hashPath": "metabrainz.musicbrainz.3.0.2.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "System.Text.Json/4.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XwzMbct3iNepJaFylN1+l8weWlFburEzXidqleSsLvSXdHSIJHEKtRVKHPlpWcFmJX6k3goPFfVgUfp40RR+bg==",
+      "path": "system.text.json/4.7.1",
+      "hashPath": "system.text.json.4.7.1.nupkg.sha512"
+    }
+  }
+}

@@ -9,8 +9,19 @@ using System.Threading.Tasks;
 
 namespace Aire_Logic_Technical_Test
 {
+    public enum WorkInclusionType
+    {
+        None,
+        IncludeAll,
+        IgnoreAll,
+        CaseByCase
+    }
     public class ExternalInterface
     {
+        static List<string> songNames;
+        static WorkInclusionType workInclusionType;
+
+        static int numberOfSongs;
         /// <summary>
         /// Takes the name of an artist and returns a track list of their works.
         /// </summary>
@@ -18,7 +29,7 @@ namespace Aire_Logic_Technical_Test
         public static List<string> QueryMusicBrainzArtist(int arrayIndex)
         {
             List<string> potentialArtists = new List<string>();
-            List<string> songNames = new List<string>();
+            songNames = new List<string>();            
 
             try
             {
@@ -73,7 +84,9 @@ namespace Aire_Logic_Technical_Test
                     var releaseId = selectedArtist.Releases[0].Id;
                     var works = q.BrowseArtistWorks(id, limit: 100, offset: 0);
 
-                    int numberOfSongs = 0;
+                    numberOfSongs = 0;
+
+                    workInclusionType = WorkInclusionType.None;
 
                     while (works.Results.Count != 0)
                     {
@@ -87,33 +100,26 @@ namespace Aire_Logic_Technical_Test
                                     songNames.Add(work.Title);
                                 }
                             }
+                            else if (workInclusionType == WorkInclusionType.None)
+                            {
+                                IncludeAllDecisionInput(arrayIndex, work.Title);                                
+                            }
                             else
                             {
-                                Console.WriteLine(Program.artists[arrayIndex] + ": " + work.Title + " IS NOT OF TYPE: SONG.");
-                                Console.WriteLine("DO YOU WANT TO INCLUDE IT IN THE SEARCH? (Y/N)");
-
-                                bool awaitingDecision = true;
-
-                                while (awaitingDecision)
+                                switch (workInclusionType)
                                 {
-                                    string response = Console.ReadLine();
+                                    case WorkInclusionType.IncludeAll:
+                                        numberOfSongs++;
 
-                                    if (response == "Y" | response == "y" | response == "yes" | response == "Yes")
-                                    {
-                                        awaitingDecision = false;
-                                        songNames.Add(work.Title);
-                                        Console.WriteLine(Program.artists[arrayIndex] + ": " + work.Title + " ADDED TO SONG LIST.");
-                                    }
-                                    else if (response != string.Empty)
-                                    {
-                                        awaitingDecision = false;
-                                    }
-                                    else
-                                    {
-                                        Console.WriteLine("");
-                                        Console.WriteLine("NO RESPONSE DETECTED.  PLEASE RESPOND WITH EITHER: Y OR N");
-                                        Console.WriteLine("");
-                                    }
+                                        if (!songNames.Contains(work.Title))
+                                        {
+                                            songNames.Add(work.Title);
+                                        }
+
+                                        break;
+                                    case WorkInclusionType.CaseByCase:
+                                        AddWorkWithoutSongTypeInput(arrayIndex, work.Title);
+                                        break;
                                 }
                             }
                         }
@@ -132,6 +138,127 @@ namespace Aire_Logic_Technical_Test
             }
 
             return songNames;
+        }
+
+        /// <summary>
+        /// Displays a question relating to whether the works without a type of "song" should all be included
+        /// in the search.
+        /// </summary>
+        /// <param name="arrayIndex"></param>
+        /// <param name="title">Title of the work (work.title)</param>
+        static void IncludeAllDecisionInput(int arrayIndex, string title)
+        {
+            Console.WriteLine(Program.artists[arrayIndex] + ": " + title + " IS NOT OF TYPE: SONG.");
+            Console.WriteLine("DO YOU WANT TO INCLUDE ALL WORK INSTANCES IN THE SEARCH? (Y/N)");
+
+            bool awaitingDecision = true;
+
+            while (awaitingDecision)
+            {
+                string response = Console.ReadLine();
+
+                if (response == "Y" | response == "y" | response == "yes" | response == "Yes")
+                {
+                    awaitingDecision = false;
+                    workInclusionType = WorkInclusionType.IncludeAll;
+
+                    numberOfSongs++;
+                    if (!songNames.Contains(title))
+                    {
+                        songNames.Add(title);
+                    }
+                }
+                else if (response != string.Empty)
+                {
+                    awaitingDecision = false;
+
+                    IgnoreAllDecisionInput(arrayIndex, title);
+
+                }
+                else
+                {
+                    Console.WriteLine("NO RESPONSE DETECTED.  PLEASE RESPOND WITH EITHER: Y OR N");
+                    Console.WriteLine("");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Displays a question relating to whether the works without a type of "song" should all be ignored
+        /// from the search.
+        /// </summary>
+        /// <param name="arrayIndex"></param>
+        /// <param name="title">Title of the work (work.title)</param>
+        static void IgnoreAllDecisionInput(int arrayIndex, string title)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("DO YOU WANT TO IGNORE ALL WORK INSTANCES NOT OF TYPE SONG IN THE SEARCH? (Y/N)");
+            Console.WriteLine("NOTE: CHOOSING NOT TO IGNORE ALL WILL RESULT IN SUCH WORK INSTANCES BEING BEING INSPECTED ON A CASE BY CASE BASIS.");
+
+            bool awaitingIgnoreDecision = true;
+
+            while (awaitingIgnoreDecision)
+            {
+                string ignoreResponse = Console.ReadLine();
+
+                if (ignoreResponse == "Y" | ignoreResponse == "y" | ignoreResponse == "yes" | ignoreResponse == "Yes")
+                {
+                    awaitingIgnoreDecision = false;
+                    workInclusionType = WorkInclusionType.IgnoreAll;
+                }
+                else if (ignoreResponse != string.Empty)
+                {
+                    awaitingIgnoreDecision = false;
+
+                    Console.WriteLine("SONGS WILL BE BE INSPECTED ON A CASE BY CASE BASIS.");
+
+                    workInclusionType = WorkInclusionType.CaseByCase;
+
+                    AddWorkWithoutSongTypeInput(arrayIndex, title);
+
+                }
+                else
+                {
+                    Console.WriteLine("NO RESPONSE DETECTED.  PLEASE RESPOND WITH EITHER: Y OR N");
+                    Console.WriteLine("");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Determines whether a work with a type of something other than "Song" is included in the search.  
+        /// This is due to some songs not being input correctly in the MusicBrainz database.
+        /// </summary>
+        /// <param name="arrayIndex"></param>
+        /// <param name="title">Title of the work (work.title)</param>
+        static void AddWorkWithoutSongTypeInput(int arrayIndex, string title)
+        {
+            Console.WriteLine(Program.artists[arrayIndex] + ": " + title + " IS NOT OF TYPE: SONG.");
+            Console.WriteLine("DO YOU WANT TO INCLUDE IT IN THE SEARCH? (Y/N)");
+
+            bool awaitingDecision = true;
+
+            while (awaitingDecision)
+            {
+                string response = Console.ReadLine();
+
+                if (response == "Y" | response == "y" | response == "yes" | response == "Yes")
+                {
+                    awaitingDecision = false;
+                    songNames.Add(title);
+                    Console.WriteLine(Program.artists[arrayIndex] + ": " + title + " ADDED TO SONG LIST.");
+                }
+                else if (response != string.Empty)
+                {
+                    awaitingDecision = false;
+                }
+                else
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("NO RESPONSE DETECTED.  PLEASE RESPOND WITH EITHER: Y OR N");
+                    Console.WriteLine("");
+                }
+            }
         }
 
         /// <summary>

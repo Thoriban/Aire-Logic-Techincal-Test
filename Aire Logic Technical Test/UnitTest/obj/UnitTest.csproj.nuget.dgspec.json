@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adkj3\\source\\repos\\Aire Logic Technical Test\\UnitTest\\UnitTest.csproj": {}
+    "C:\\Users\\adkj3\\Documents\\GitHub\\Aire-Logic-Techincal-Test\\Aire Logic Technical Test\\UnitTest\\UnitTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adkj3\\source\\repos\\Aire Logic Technical Test\\Aire Logic Technical Test\\Aire Logic Technical Test.csproj": {
+    "C:\\Users\\adkj3\\Documents\\GitHub\\Aire-Logic-Techincal-Test\\Aire Logic Technical Test\\Aire Logic Technical Test\\Aire Logic Technical Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adkj3\\source\\repos\\Aire Logic Technical Test\\Aire Logic Technical Test\\Aire Logic Technical Test.csproj",
+        "projectUniqueName": "C:\\Users\\adkj3\\Documents\\GitHub\\Aire-Logic-Techincal-Test\\Aire Logic Technical Test\\Aire Logic Technical Test\\Aire Logic Technical Test.csproj",
         "projectName": "Aire Logic Technical Test",
-        "projectPath": "C:\\Users\\adkj3\\source\\repos\\Aire Logic Technical Test\\Aire Logic Technical Test\\Aire Logic Technical Test.csproj",
+        "projectPath": "C:\\Users\\adkj3\\Documents\\GitHub\\Aire-Logic-Techincal-Test\\Aire Logic Technical Test\\Aire Logic Technical Test\\Aire Logic Technical Test.csproj",
         "packagesPath": "C:\\Users\\adkj3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adkj3\\source\\repos\\Aire Logic Technical Test\\Aire Logic Technical Test\\obj\\",
+        "outputPath": "C:\\Users\\adkj3\\Documents\\GitHub\\Aire-Logic-Techincal-Test\\Aire Logic Technical Test\\Aire Logic Technical Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adkj3\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\adkj3\\source\\repos\\Aire Logic Technical Test\\UnitTest\\UnitTest.csproj": {
+    "C:\\Users\\adkj3\\Documents\\GitHub\\Aire-Logic-Techincal-Test\\Aire Logic Technical Test\\UnitTest\\UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adkj3\\source\\repos\\Aire Logic Technical Test\\UnitTest\\UnitTest.csproj",
+        "projectUniqueName": "C:\\Users\\adkj3\\Documents\\GitHub\\Aire-Logic-Techincal-Test\\Aire Logic Technical Test\\UnitTest\\UnitTest.csproj",
         "projectName": "UnitTest",
-        "projectPath": "C:\\Users\\adkj3\\source\\repos\\Aire Logic Technical Test\\UnitTest\\UnitTest.csproj",
+        "projectPath": "C:\\Users\\adkj3\\Documents\\GitHub\\Aire-Logic-Techincal-Test\\Aire Logic Technical Test\\UnitTest\\UnitTest.csproj",
         "packagesPath": "C:\\Users\\adkj3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adkj3\\source\\repos\\Aire Logic Technical Test\\UnitTest\\obj\\",
+        "outputPath": "C:\\Users\\adkj3\\Documents\\GitHub\\Aire-Logic-Techincal-Test\\Aire Logic Technical Test\\UnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adkj3\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -92,8 +92,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\adkj3\\source\\repos\\Aire Logic Technical Test\\Aire Logic Technical Test\\Aire Logic Technical Test.csproj": {
-                "projectPath": "C:\\Users\\adkj3\\source\\repos\\Aire Logic Technical Test\\Aire Logic Technical Test\\Aire Logic Technical Test.csproj"
+              "C:\\Users\\adkj3\\Documents\\GitHub\\Aire-Logic-Techincal-Test\\Aire Logic Technical Test\\Aire Logic Technical Test\\Aire Logic Technical Test.csproj": {
+                "projectPath": "C:\\Users\\adkj3\\Documents\\GitHub\\Aire-Logic-Techincal-Test\\Aire Logic Technical Test\\Aire Logic Technical Test\\Aire Logic Technical Test.csproj"
               }
             }
           }

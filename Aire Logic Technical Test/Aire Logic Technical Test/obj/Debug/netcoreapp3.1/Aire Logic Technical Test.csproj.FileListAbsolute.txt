@@ -16,3 +16,21 @@ C:\Users\adkj3\source\repos\Aire Logic Technical Test\Aire Logic Technical Test\
 C:\Users\adkj3\source\repos\Aire Logic Technical Test\Aire Logic Technical Test\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\adkj3\source\repos\Aire Logic Technical Test\Aire Logic Technical Test\obj\Debug\netcoreapp3.1\Aire Logic Technical Test.csproj.CopyComplete
 C:\Users\adkj3\source\repos\Aire Logic Technical Test\Aire Logic Technical Test\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\bin\Debug\netcoreapp3.1\Aire Logic Technical Test.exe
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\bin\Debug\netcoreapp3.1\Aire Logic Technical Test.deps.json
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\bin\Debug\netcoreapp3.1\Aire Logic Technical Test.runtimeconfig.json
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\bin\Debug\netcoreapp3.1\Aire Logic Technical Test.runtimeconfig.dev.json
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\bin\Debug\netcoreapp3.1\Aire Logic Technical Test.dll
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\bin\Debug\netcoreapp3.1\Aire Logic Technical Test.pdb
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\bin\Debug\netcoreapp3.1\MetaBrainz.Common.Json.dll
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\bin\Debug\netcoreapp3.1\MetaBrainz.MusicBrainz.dll
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\obj\Debug\netcoreapp3.1\Aire Logic Technical Test.csprojAssemblyReference.cache
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\obj\Debug\netcoreapp3.1\Aire Logic Technical Test.AssemblyInfoInputs.cache
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\obj\Debug\netcoreapp3.1\Aire Logic Technical Test.AssemblyInfo.cs
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\obj\Debug\netcoreapp3.1\Aire Logic Technical Test.csproj.CoreCompileInputs.cache
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\obj\Debug\netcoreapp3.1\Aire Logic Technical Test.csproj.CopyComplete
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\obj\Debug\netcoreapp3.1\Aire Logic Technical Test.dll
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\obj\Debug\netcoreapp3.1\Aire Logic Technical Test.pdb
+C:\Users\adkj3\Documents\GitHub\Aire-Logic-Techincal-Test\Aire Logic Technical Test\Aire Logic Technical Test\obj\Debug\netcoreapp3.1\Aire Logic Technical Test.genruntimeconfig.cache

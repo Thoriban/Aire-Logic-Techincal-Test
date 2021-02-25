@@ -6,7 +6,7 @@ and returns the average number of words in the artist's songs.  If multiple arti
 the program will also compare the artist's averages and declare which has the higher average word count.
 
 ## Installation
-Extract the Zip file to your desired location. Navigate to ../AireLogic Technical Test/bin/Debug/netcoreapp3.1/ and
+Extract the Zip file to your desired location. Navigate to ../AireLogic Technical Test/bin/Release/netcoreapp3.1/ and
 run the Aire Logic Techincal Test.exe executable file.
 
 ## Roadmap

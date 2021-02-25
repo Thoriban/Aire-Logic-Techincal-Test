@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "sNrNMkvbyR6xizL3QCBNvxC8s6jcO7HK3MlHfstT48Ra5SqtdYQOQhjb0SpogEynycaNOKIJaAUTamNbxP8Ghw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\adkj3\\source\\repos\\Aire Logic Technical Test\\Aire Logic Technical Test\\Aire Logic Technical Test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adkj3\\.nuget\\packages\\metabrainz.common.json\\3.0.0\\metabrainz.common.json.3.0.0.nupkg.sha512",
+    "C:\\Users\\adkj3\\.nuget\\packages\\metabrainz.musicbrainz\\3.0.2\\metabrainz.musicbrainz.3.0.2.nupkg.sha512",
+    "C:\\Users\\adkj3\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\adkj3\\.nuget\\packages\\system.text.json\\4.7.1\\system.text.json.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
